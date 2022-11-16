@@ -1,15 +1,13 @@
-export const App = () => {
+import { useState } from "react";
+
+
+export function App()  {
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bed, setBed] = useState(0);
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
+    <div>
       React homework template
     </div>
   );
